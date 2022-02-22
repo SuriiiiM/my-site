@@ -1,10 +1,9 @@
 ---
 cascade:
   headless: true
-description: |
-  A website template for Hugo developed by RStudio & Formspree and available for free.
-show_header: true
-sidebar_left: false
+description: A personal website of maomi forest.
+show_header: false
+sidebar_left: true
 title: About
 ---
 
