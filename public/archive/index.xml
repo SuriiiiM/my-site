@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archive on SELF STORAGE</title>
-    <link>https://mengssite.netlify.app/archive/</link>
+    <link>https://mengsselfstorage.netlify.app/archive/</link>
     <description>Recent content in Archive on SELF STORAGE</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://mengssite.netlify.app/archive/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://mengsselfstorage.netlify.app/archive/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
