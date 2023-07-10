@@ -6,6 +6,10 @@ HUGO_VERSION = '0.92.2'
 
 
 [context]
+
+[context.production.environment]
+  HUGO_BASEURL = "https://mengsselfstorage.netlify.app/"
+
 [context.branch-deploy]
 command = 'hugo -F -b $DEPLOY_PRIME_URL'
 
