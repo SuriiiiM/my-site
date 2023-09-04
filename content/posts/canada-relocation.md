@@ -58,16 +58,27 @@ relocation的话搬家肯定是耗时又耗力的一件事，另外换国家一�
 我的timeline来做参考 -
 
 3/29 H1B not selected notification
+
 3/31 exploring options
+
 4/3 shared JD and resume with company lawyer
+
 4/6 L1 kickoff to lawyer (律所的而不是公司的 这时候就正式开始办wp的流程了)
+
 4/11 lawyer email for documentation collection, everything ready except: Manager Questionnaire and offer letter
+
 4/28 Canada offer letter signed（你看这个offer真的很慢）
+
 5/16 received application prepared for validation and signature （律所会有很多要你签字的表）
+
 5/26 application submitted （正式提交给加拿大政府了）
+
 5/30 biometric request letter
+
 6/1 biometric done
+
 6/15 request of passport & sent 邮寄护照给LA 用了官方的2-way service with FedEx （可以选LA或者NYC，如果人在LA还可以inperson去交）
+
 6/27 passport received with visa stamp （如果护照寄过去迟迟没有status update的话可以打电话/发邮件（官网上都有入口）问一下，很多经验是一问就update…）
 
 湾区附近的biometric slot真的非常的紧张，基本只能约到三四个星期以后在LA的或者一个月边缘的湾区附近的，而收到这个biometric request的一个月内是要把指纹打完的，但是！SF城里250broadway这个地址是可以walkin的，拿着一个whatever地点时间的预约单去就可以，重点是你要有一个预约和预约code，所以工作人员可以把你的信息关联起来。据说每天walkin的名额是有限的，所以建议早一点去，我们是一开门就去了，里面完全没有人，也没有任何人问我们为什么约了别的地方但来这里打。至于打指纹的早晚和wp的approval速度到底有没有直接关联我完全摸不到头脑…
@@ -125,10 +136,12 @@ Richmond Hill&Markham&Scarborough - 中餐主要集中的区域，华人区
 宠物坐飞机的准备：
 
 符合航班要求尺寸的In-cabin carrier（in cabin要求软包，具体尺寸在之前分享的link里有写，主要目的是能塞进前面的座位下面）我们用的是如图petsfit的M号猫包（应该是国内的牌子），把两根龙骨抽出来，实在担心的话还可以把两头的铁丝也拆出来。看了很多加航国际航班的帖子分享说查得很严，甚至用尺子量，但感觉主要是上海/国内出发的问题。我们从SFO出发全程值机柜台和地勤都没有人来查看猫包尺寸。
-![cat-carrier](img/cat-carrier.jpg)
+
+![ ](/img/cat-carrier.jpg)
 
 Harness+leash 两个猫都是第一次坐飞机，所以过安检的时候很怕跑掉，所以提前穿了harness并且在安检的时候挂上leash+要求了private room检查猫包。买的是如图petsafe的M号的Y字型harness，我觉得很secure不容易挣脱猫的受力也不会太难受。
-![cat-carrier](img/cat-leash.jpg)
+
+![ ](/img/cat-leash.jpg)
 
 我们提前几天把猫包摆出来做了一些适应准备。另外除起飞降落之外的时间都可以放到腿上/旁边的空座位把expandable的部分展开。我们大概是在去机场之前4h停止喂水和食物，路上准备了零食以防万一但是没有喂，也没有打算给吃药因为兽医也不建议，怕飞机颠簸猫被呕吐物噎到。
 
