@@ -66,7 +66,7 @@ weight = 100
 
 
 [params]
-author = "M"
+author = ""
 description = "A storage place for random thoughts, travel notes and cat pictures."
 keywords = "thoughts,travel,cat"
 img_home = "img/home-bg.jpg"

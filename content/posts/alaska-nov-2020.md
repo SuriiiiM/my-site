@@ -1,7 +1,7 @@
 +++
 author = ""
 title = "冬季阿拉斯加 Alaska, Winter - Nov'2020"
-date = ""
+date = "2020-11-30"
 description = "这次主要去了Anchorage和Fairbanks两个地方。以后还会在夏天去一次国家公园。"
 tags = [
     "Year2022", "Alaska", "Travel-Notes"

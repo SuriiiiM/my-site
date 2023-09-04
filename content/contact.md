@@ -1,8 +1,7 @@
 +++
-title = "Contact"
+title = "In Touch"
 description = "Anything you want to talk about?"
-date = false
-author = ""
+date = "2023-07-09"
 comment = false
 +++
 <h2>Anything you want to talk about?</h2>
