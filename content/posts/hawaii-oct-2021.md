@@ -6,6 +6,7 @@ description = "这次去了Oahu和大岛，以后想去Maui度假"
 tags = [
     "Year2021", "Hawaii", "Travel-Notes"
 ]
+comments = true
 +++
 夏威夷真是个好地方，可以去很多次。第一次很难避开以Oahu作为起点，加上大岛的火山风光构成对夏威夷的初体验。
 

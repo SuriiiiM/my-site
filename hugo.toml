@@ -4,22 +4,25 @@ theme = "PaperMod"
 title = "我乐苦多"
 
 [params]
-# label.icon = "img/pepsi.jpg"
-
-favicon = "img/pepsi.jpg"
-
 copyright = "© 2025 Suri"
 paginate = 5 # Shows 5 posts per page
 
 languageCode = "zh-cn"  # Primary language: Simplified Chinese
 defaultContentLanguage = "zh-cn"
 
-ShowShareButtons = true
+ShowShareButtons = false
+ShowWordCount = true
 ShowReadingTime = true
 TocOpen = true
 ShowToc = true
 ShowPostNavLinksn = true
-comments = true
+
+# Enable comments globally
+EnableComments = true
+  
+# If using Cusdis (set your Cusdis App ID here)
+CusdisAppID = "2be7d731-b015-469b-b019-287e1245bed6"
+CusdisHost = "https://cusdis.com"
 
 hasCJKLanguage = true
 enableInlineShortcodes = true
@@ -28,13 +31,16 @@ ignoreErrors = ["error-remote-getjson"]
 
 disqusShortname = ""
 googleAnalytics = ""
-github = "your_github_username"
-linkedin = "your_linkedin_username"
-img_home = "img/banner.jpg"  # Add a high-quality image in the 'static/img' folder
+
+ShowFullTextinRSS = true
+
+[params.assets]
+favicon = "/img/pepsi.jpg"
 
 [params.homeInfoParams]
 Title = "|过一种临时的生活|"
 # Content = "过一种临时的生活"
+ImageUrl = "/img/pepsi.jpg"
 
 [[params.socialIcons]]
 name = "douban"
@@ -45,8 +51,16 @@ name = "Mastodon"
 url = "https://m.cmx.im/@Suri"
 
 [[params.socialIcons]]
+name = "instagram"
+url = "https://www.instagram.com/suriiim"
+
+[[params.socialIcons]]
+name = "email"
+url = "tomorroweverknows@gmail.com"
+
+[[params.socialIcons]]
 name = "RSS"
-url = "https://linkedin.com/in/yourprofile"
+url = ""
 
 [outputs]
 home = ["HTML", "JSON", "RSS"]
