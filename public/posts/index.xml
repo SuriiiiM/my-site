@@ -1,74 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on SELF STORAGE</title>
-    <link>https://mengsselfstorage.netlify.app/posts/</link>
-    <description>Recent content in Posts on SELF STORAGE</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Posts on 我乐苦多</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on 我乐苦多</description>
+    <generator>Hugo -- 0.142.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Aug 2022 15:38:30 +0800</lastBuildDate><atom:link href="https://mengsselfstorage.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Puppet - Getting Started</title>
-      <link>https://mengsselfstorage.netlify.app/posts/getting-started/</link>
-      <pubDate>Tue, 09 Aug 2022 15:38:30 +0800</pubDate>
-      
-      <guid>https://mengsselfstorage.netlify.app/posts/getting-started/</guid>
-      <description>&lt;p&gt;Puppet is a responsive, simple and clean &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; theme based on the &lt;a href=&#34;https://github.com/Huxpro/huxpro.github.io&#34; target=&#34;_blank&#34;&gt;Huxblog Jekyll theme&lt;/a&gt;.&lt;/p&gt;</description>
+      <title>H1B7抽不中: 美国-&gt;加拿大Relocation</title>
+      <link>http://localhost:1313/posts/canada-relocation/</link>
+      <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/canada-relocation/</guid>
+      <description>再也不想搬家啦！</description>
     </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://mengsselfstorage.netlify.app/posts/markdown-syntax/</link>
-      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mengsselfstorage.netlify.app/posts/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://mengsselfstorage.netlify.app/posts/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mengsselfstorage.netlify.app/posts/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34; target=&#34;_blank&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34; target=&#34;_blank&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://mengsselfstorage.netlify.app/posts/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mengsselfstorage.netlify.app/posts/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://mengsselfstorage.netlify.app/posts/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://mengsselfstorage.netlify.app/posts/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>冬季阿拉斯加 Alaska, Winter - Nov&#39;2020</title>
-      <link>https://mengsselfstorage.netlify.app/posts/alaska-nov-2020/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mengsselfstorage.netlify.app/posts/alaska-nov-2020/</guid>
-      <description>Anchorage玩Matanuska Glacier Park 冰川 必须约tour 非常美 里面有防滑链提供 大概整个tour 2h 我们去的有11am/2pm两个时间 $100 per person</description>
-    </item>
-    
     <item>
       <title>夏威夷，Hawaii, Oahu&amp;Big Island - Oct&#39;2021</title>
-      <link>https://mengsselfstorage.netlify.app/posts/hawaii-oct-2021/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mengsselfstorage.netlify.app/posts/hawaii-oct-2021/</guid>
-      <description>Oahu玩【推荐】浮潜看鲨鱼 snorkeling with shark 真的很近 提前问了period的时候也可以参加（其实他们对我们的血不太感兴趣） 定的是island view hawai</description>
+      <link>http://localhost:1313/posts/hawaii-oct-2021/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hawaii-oct-2021/</guid>
+      <description>这次去了Oahu和大岛，以后想去Maui度假</description>
     </item>
-    
+    <item>
+      <title>冬季阿拉斯加 Alaska, Winter - Nov&#39;2020</title>
+      <link>http://localhost:1313/posts/alaska-nov-2020/</link>
+      <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/alaska-nov-2020/</guid>
+      <description>这次主要去了Anchorage和Fairbanks两个地方。以后还会在夏天去一次国家公园。</description>
+    </item>
   </channel>
 </rss>

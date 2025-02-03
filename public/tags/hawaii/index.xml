@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hawaii on SELF STORAGE</title>
-    <link>https://mengsselfstorage.netlify.app/tags/hawaii/</link>
-    <description>Recent content in Hawaii on SELF STORAGE</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://mengsselfstorage.netlify.app/tags/hawaii/index.xml" rel="self" type="application/rss+xml" />
+    <title>Hawaii on 我乐苦多</title>
+    <link>http://localhost:1313/tags/hawaii/</link>
+    <description>Recent content in Hawaii on 我乐苦多</description>
+    <generator>Hugo -- 0.142.0</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/hawaii/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>夏威夷，Hawaii, Oahu&amp;Big Island - Oct&#39;2021</title>
-      <link>https://mengsselfstorage.netlify.app/posts/hawaii-oct-2021/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mengsselfstorage.netlify.app/posts/hawaii-oct-2021/</guid>
-      <description>Oahu玩【推荐】浮潜看鲨鱼 snorkeling with shark 真的很近 提前问了period的时候也可以参加（其实他们对我们的血不太感兴趣） 定的是island view hawai</description>
+      <link>http://localhost:1313/posts/hawaii-oct-2021/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hawaii-oct-2021/</guid>
+      <description>这次去了Oahu和大岛，以后想去Maui度假</description>
     </item>
-    
   </channel>
 </rss>

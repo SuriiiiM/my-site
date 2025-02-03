@@ -6,6 +6,9 @@ description = "这次主要去了Anchorage和Fairbanks两个地方。以后还�
 tags = [
     "Year2022", "Alaska", "Travel-Notes"
 ]
+[params]
+ShowShareButtons = true
+
 +++
 ### Anchorage
 #### 玩

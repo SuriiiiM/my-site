@@ -1,5 +1,5 @@
 +++
-author = ""
+title = "Home"
+description = "过一种临时的生活"
 +++
 
-Home Index Content
