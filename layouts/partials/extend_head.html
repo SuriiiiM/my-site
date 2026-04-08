@@ -120,11 +120,7 @@
       const start = parseUTC(startKey);
       const totalWeeks = 52;
       const totalDays = totalWeeks * 7;
-
-      // Anchor to week start so the rendered grid is exactly 52 x 7.
       const gridStart = new Date(start.getTime());
-      const dow = gridStart.getUTCDay(); // 0 (Sun) .. 6 (Sat)
-      gridStart.setUTCDate(gridStart.getUTCDate() - dow);
       const step = size + gap;
 
       // Month axis (labels above the grid).
@@ -149,7 +145,7 @@
       const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
       let lastMonth = null;
       for (let w = 0; w < totalWeeks; w++) {
-        const dt = new Date(gridStart.getTime() + w * 7 * msDay);
+        const dt = new Date(start.getTime() + w * 7 * msDay);
         const month = dt.getUTCMonth();
         if (month !== lastMonth) {
           lastMonth = month;
@@ -162,12 +158,12 @@
       }
 
       for (let i = 0; i < totalDays; i++) {
-        const date = new Date(gridStart.getTime() + i * msDay);
+        const date = new Date(start.getTime() + i * msDay);
         const key = formatUTC(date);
         const c = counts[key] ?? 0;
 
         const week = Math.floor(i / 7);
-        const row = i % 7;
+        const row = date.getUTCDay();
         const left = week * step;
         const top = row * step;
 
