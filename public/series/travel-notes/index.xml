@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Travel-Notes on 我乐苦多</title>
-    <link>http://localhost:1313/series/travel-notes/</link>
+    <link>https://mengsselfstorage.netlify.app/series/travel-notes/</link>
     <description>Recent content in Travel-Notes on 我乐苦多</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/series/travel-notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mengsselfstorage.netlify.app/series/travel-notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>夏威夷，Hawaii, Oahu&amp;Big Island - Oct&#39;2021</title>
-      <link>http://localhost:1313/posts/hawaii-oct-2021/</link>
+      <link>https://mengsselfstorage.netlify.app/posts/hawaii-oct-2021/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hawaii-oct-2021/</guid>
+      <guid>https://mengsselfstorage.netlify.app/posts/hawaii-oct-2021/</guid>
       <description>这次去了Oahu和大岛，以后想去Maui度假</description>
       <content:encoded><![CDATA[<p>夏威夷真是个好地方，可以去很多次。第一次很难避开以Oahu作为起点，加上大岛的火山风光构成对夏威夷的初体验。</p>
 <h3 id="oahu">Oahu</h3>
@@ -74,9 +74,9 @@
     </item>
     <item>
       <title>冬季阿拉斯加 Alaska, Winter - Nov&#39;2020</title>
-      <link>http://localhost:1313/posts/alaska-nov-2020/</link>
+      <link>https://mengsselfstorage.netlify.app/posts/alaska-nov-2020/</link>
       <pubDate>Mon, 30 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/alaska-nov-2020/</guid>
+      <guid>https://mengsselfstorage.netlify.app/posts/alaska-nov-2020/</guid>
       <description>这次主要去了Anchorage和Fairbanks两个地方。以后还会在夏天去一次国家公园。</description>
       <content:encoded><![CDATA[<h3 id="anchorage">Anchorage</h3>
 <h4 id="玩">玩</h4>
