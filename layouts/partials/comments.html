@@ -1,6 +1,14 @@
-<div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="2be7d731-b015-469b-b019-287e1245bed6"
-  data-page-id="{{ .Permalink }}">
-></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+{{- $twikooParams := site.Params.twikoo | default dict -}}
+{{- $twikooEnvId := or (index $twikooParams "envId") (index $twikooParams "envid") (index $twikooParams "envID") | default "" -}}
+{{- /* Only mount Twikoo when envId is configured. */ -}}
+{{- if $twikooEnvId -}}
+<div id="tcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.7.1/dist/twikoo.min.js"></script>
+<script>
+  twikoo.init({
+    envId: {{ $twikooEnvId | safeJSStr }},
+    el: '#tcomment',
+    path: window.location.pathname,
+  });
+</script>
+{{- end -}}

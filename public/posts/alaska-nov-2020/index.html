@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>冬季阿拉斯加 Alaska, Winter - Nov&#39;2020 | 我乐苦多</title>
 <meta name="keywords" content="Year2022, Alaska, Travel-Notes">
 <meta name="description" content="这次主要去了Anchorage和Fairbanks两个地方。以后还会在夏天去一次国家公园。">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/alaska-nov-2020/">
+<link rel="canonical" href="https://mengsselfstorage.netlify.app/posts/alaska-nov-2020/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/img/pepsi.jpg">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://mengsselfstorage.netlify.app/img/pepsi.jpg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mengsselfstorage.netlify.app/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mengsselfstorage.netlify.app/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mengsselfstorage.netlify.app/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mengsselfstorage.netlify.app/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/alaska-nov-2020/">
+<link rel="alternate" hreflang="en" href="https://mengsselfstorage.netlify.app/posts/alaska-nov-2020/">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,7 +55,287 @@
         }
 
     </style>
-</noscript>
+</noscript><style>
+  .archives-heatmap-wrapper {
+    margin: 18px 0 28px;
+  }
+
+  .archives-heatmap-axis {
+    position: relative;
+    height: 18px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: var(--secondary);
+  }
+
+  .archives-heatmap-axis .hm-month {
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    transform: translateX(-1px);
+  }
+
+  .archives-heatmap {
+    --hm-size: 12px;
+    --hm-gap: 2px;
+    display: block;
+    margin: 0;
+    user-select: none;
+  }
+
+  .archives-heatmap .hm-square {
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid rgba(155, 156, 157, 0.25);
+  }
+
+  .archives-heatmap .hm-level-1 {
+    background: #B4C6D5;
+    border-color: #B4C6D5;
+  }
+
+  .archives-heatmap .hm-level-2 {
+    background: #8FA7BD;
+    border-color: #8FA7BD;
+  }
+
+  .archives-heatmap .hm-level-3 {
+    background: #68829C;
+    border-color: #68829C;
+  }
+
+  .archives-heatmap .hm-square a,
+  .archives-heatmap .hm-square.hm-square {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .archives-heatmap .hm-square:hover {
+    filter: brightness(1.08);
+  }
+
+  .archives-heatmap .hm-square:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  .archive-day {
+    scroll-margin-top: 90px;
+  }
+</style>
+
+<script>
+  (function () {
+    const initArchivesHeatmap = () => {
+      const heatmapEl = document.getElementById('archives-heatmap');
+      if (!heatmapEl) return;
+
+      const dataEl = document.getElementById('archives-heatmap-data');
+      if (!dataEl) return;
+
+      let data = [];
+      try {
+        data = JSON.parse(dataEl.textContent || '[]');
+        
+        
+        if (typeof data === 'string') data = JSON.parse(data);
+      } catch (e) {
+        data = [];
+      }
+
+      if (!Array.isArray(data)) data = [];
+
+      const counts = Object.create(null);
+      const titles = Object.create(null);
+      for (const item of data) {
+        if (!item || !item.d) continue;
+        counts[item.d] = Number(item.c || 0);
+        if (Array.isArray(item.t)) titles[item.d] = item.t;
+      }
+
+      const startKey = heatmapEl.dataset.start;
+      const endKey = heatmapEl.dataset.end;
+      const size = Number(heatmapEl.dataset.size || 12);
+      const gap = Number(heatmapEl.dataset.gap || 2);
+
+      const parseUTC = (key) => {
+        const [y, m, d] = key.split('-').map(Number);
+        return new Date(Date.UTC(y, m - 1, d));
+      };
+
+      const formatUTC = (dt) => {
+        const y = dt.getUTCFullYear();
+        const m = String(dt.getUTCMonth() + 1).padStart(2, '0');
+        const d = String(dt.getUTCDate()).padStart(2, '0');
+        return `${y}-${m}-${d}`;
+      };
+
+      const start = parseUTC(startKey);
+      const end = parseUTC(endKey);
+
+      const msDay = 24 * 60 * 60 * 1000;
+      const totalDays = Math.floor((end - start) / msDay) + 1;
+
+      const gridStart = new Date(start.getTime());
+      const dow = gridStart.getUTCDay(); 
+      gridStart.setUTCDate(gridStart.getUTCDate() - dow);
+
+      const totalWeeks = Math.ceil((totalDays + dow) / 7);
+      const step = size + gap;
+
+      
+      const axisId = 'archives-heatmap-axis';
+      let axisEl = document.getElementById(axisId);
+      if (!axisEl) {
+        axisEl = document.createElement('div');
+        axisEl.id = axisId;
+        axisEl.className = 'archives-heatmap-axis';
+        heatmapEl.parentNode.insertBefore(axisEl, heatmapEl);
+      } else {
+        axisEl.innerHTML = '';
+      }
+
+      axisEl.style.width = `${totalWeeks * step - gap}px`;
+
+      heatmapEl.innerHTML = '';
+      heatmapEl.style.position = 'relative';
+      heatmapEl.style.width = `${totalWeeks * step - gap}px`;
+      heatmapEl.style.height = `${7 * step - gap}px`;
+
+      const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      let lastMonth = null;
+      for (let w = 0; w < totalWeeks; w++) {
+        const dt = new Date(gridStart.getTime() + w * 7 * msDay);
+        const month = dt.getUTCMonth();
+        if (month !== lastMonth) {
+          lastMonth = month;
+          const label = document.createElement('div');
+          label.className = 'hm-month';
+          label.textContent = monthNames[month];
+          label.style.left = `${w * step}px`;
+          axisEl.appendChild(label);
+        }
+      }
+
+      for (let i = 0; i < totalDays; i++) {
+        const date = new Date(start.getTime() + i * msDay);
+        const key = formatUTC(date);
+        const c = counts[key] ?? 0;
+
+        const week = Math.floor((date.getTime() - gridStart.getTime()) / (msDay * 7));
+        const row = date.getUTCDay();
+        const left = week * step;
+        const top = row * step;
+
+        const level =
+          c === 0 ? 0 : c === 1 ? 1 : c <= 3 ? 2 : 3;
+
+        if (c > 0) {
+          const a = document.createElement('a');
+          a.href = `#${key}`;
+          a.className = `hm-square hm-level-${level}`;
+          const dayTitles = titles[key] || [];
+          const titleLines = dayTitles.length
+            ? [`${key}: ${c} post${c === 1 ? '' : 's'}`, ...dayTitles]
+            : [`${key}: ${c} post${c === 1 ? '' : 's'}`];
+          a.title = titleLines.join('\n');
+          a.setAttribute('aria-label', titleLines[0]);
+          a.style.position = 'absolute';
+          a.style.left = `${left}px`;
+          a.style.top = `${top}px`;
+          a.style.width = `${size}px`;
+          a.style.height = `${size}px`;
+          heatmapEl.appendChild(a);
+        } else {
+          const s = document.createElement('span');
+          s.className = `hm-square hm-level-0`;
+          s.setAttribute('aria-hidden', 'true');
+          s.style.position = 'absolute';
+          s.style.left = `${left}px`;
+          s.style.top = `${top}px`;
+          s.style.width = `${size}px`;
+          s.style.height = `${size}px`;
+          heatmapEl.appendChild(s);
+        }
+      }
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initArchivesHeatmap, { once: true });
+    } else {
+      initArchivesHeatmap();
+    }
+  })();
+</script>
+
+<meta property="og:url" content="https://mengsselfstorage.netlify.app/posts/alaska-nov-2020/">
+  <meta property="og:site_name" content="我乐苦多">
+  <meta property="og:title" content="冬季阿拉斯加 Alaska, Winter - Nov&#39;2020">
+  <meta property="og:description" content="这次主要去了Anchorage和Fairbanks两个地方。以后还会在夏天去一次国家公园。">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-11-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-11-30T00:00:00+00:00">
+    <meta property="article:tag" content="Year2022">
+    <meta property="article:tag" content="Alaska">
+    <meta property="article:tag" content="Travel-Notes">
+      <meta property="og:see_also" content="https://mengsselfstorage.netlify.app/posts/hawaii-oct-2021/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="冬季阿拉斯加 Alaska, Winter - Nov&#39;2020">
+<meta name="twitter:description" content="这次主要去了Anchorage和Fairbanks两个地方。以后还会在夏天去一次国家公园。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://mengsselfstorage.netlify.app/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "冬季阿拉斯加 Alaska, Winter - Nov'2020",
+      "item": "https://mengsselfstorage.netlify.app/posts/alaska-nov-2020/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "冬季阿拉斯加 Alaska, Winter - Nov'2020",
+  "name": "冬季阿拉斯加 Alaska, Winter - Nov\u00272020",
+  "description": "这次主要去了Anchorage和Fairbanks两个地方。以后还会在夏天去一次国家公园。",
+  "keywords": [
+    "Year2022", "Alaska", "Travel-Notes"
+  ],
+  "articleBody": "Anchorage 玩 Matanuska Glacier Park 冰川 必须约tour 非常美 里面有防滑链提供 大概整个tour 2h 我们去的有11am/2pm两个时间 $100 per person 和市区之间的路上风景绝好\nAlaska Zoo\nWildlife Conservation Center 非常推荐 很多平时看不到的动物 里面大概开车1.5h\nAnchorage Museum\nSeward: Anchorage 往南沿着1号公路-\u003e9号公路~2.5h可以开到Seward小镇 sea view很好 1号公路和9号公路风景超级好 小镇里有一家yelp评分超高的店（感恩节前后没开）和一家绝顶好吃pizza店，还有一个水族馆也不错（但有点小），另外附近有一个national park view更好，但需要再多预留几个小时时间\n吃 Glacier Brewhouse 推荐 分量很 推荐雪蟹腿和各类海鲜\nSnow City Cafe 推荐\nAlyeska里的Sakura还可以\n住 Alyeska: 似乎是人均住过的ski resort 一定要提前问好雪场开放时间\nFairbanks 玩 Chena hot spring: 温泉面积不是很大不需要预留很多时间 有很多活动可以提前预约（kennel tour, ice fishing, dog sled, snowmobile）每项价格似乎比Alaska别的地方提供的都贵一点，推荐snowmobile，千万不要迟到，超过15min直接被cancel给别人而且frontdesk很不情愿退款（即使你的时间不合适reschedule）Chena基本没有网络信号，需要买它的wifi，住宿条件+吃的非常一般+性价比不高，可以考虑当天往返，另外非常不推荐这里的Aurura ice museum\n北极圈+道顿公路 要看当地policy具体时间是否允许自驾进入 一般自驾也必须通知租车公司+fee，tour有车去车回（$225 per person, 2pm-4am）和飞机去车回（$540 per person, 12pm-3am），感恩节附近的车去车回大概是出发结束， 车去车回可以看到更多view，前提是日照时间长（所以感恩节附近不行），飞机去车回可以去到冻脚镇，单纯为了看极光其实可以免掉这个行程或者选飞机去车回，不然实在是太累了，季节+天气好完全可以在市区范围看到极光。车去车回推荐 alaska wildlife guide，飞机去车回推荐notrhern alaska\n狗拉雪橇 推荐black spruce dog sledding，会教你自己给狗狗上装备，可以两个人一组一个人在guide后面站着驾驶（second driver)另一个人在guide前面坐着，景色非常美！而且结束之后无限时间和狗狗玩，狗狗全都很健壮又热情，注意最好别穿fur ~$125 per person\n和驯鹿漫步 Reindeer Walk $100 per person 2.5h 驯鹿很可爱 但整个项目感觉很游客化了 不如狗拉雪橇的tour用心 同时一个时间段内整组有20个人 感觉有些多了… 但如果还没有和reindeer近距离接触过还是推荐的\n星野道夫徒步 时间所限没有安排\nSanta Claus House 据说很一般\n冰钓 可以考虑rod’s alaskan guide service 时间所限没有安排\n吃 Irashai Japan Restaurant Fairbanks的吃的真的比不过Anchorage 这家还可以\nLin’s Asian Bistro 感恩节开的为数不多的餐厅 还不错\nTurtle Club 据说非常好吃 距离市区有点距离 最好提前约\n住 Airbnb: The Bear’s Den Log Home w/Hot Tub + Aurora Views 强烈推荐这家 价格合适 有烤架 院子里有一个巨大的Jacuzzi 雪天泡澡真的很快乐\n交通 Anchorage \u003c-\u003e Fairbanks: 有两个option 飞机40min ~100刀/火车12h ~200刀 winter只有普通舱 only summer有全景玻璃观景 所以我们选了飞机\n时间安排 Day1 晚上到达Anchorage\nDay2 Matanuska Glacier Park 冰川 + Anchorage -\u003e Fairbanks\nDay3 狗拉雪橇\nDay4 北极圈+道顿公路\nDay5 和驯鹿漫步\nDay6 Chena hot spring, 傍晚Fairbanks -\u003e Anchorage\nDay7 本来要滑雪 雪场没开 后来躺尸\nDay8 wildlife conservation center + Seward + 深夜航班返回\n行前准备 出发前72小时内take的COVID test 但其实落地到机场也就只看了你的negative result/如果还在pending给他看一下你当时做test的confirmation email就可以了 非常不严格 （我们是在CVS做的travel purpose test $140 per person）\n暖宝宝\n雪靴 千万别穿ugg 可以考虑sorel\n手套 羊毛袜子 三层layer的衣服（可以youtube直接搜what to wear in Alaska参考）\n一定要租四驱的车！另外路上可以多注意路边 可以看到moose之类的\n查好日照时间～ 11月份下午三点就天黑了 所以每天也就安排1个活动\n",
+  "wordCount" : "225",
+  "inLanguage": "en",
+  "datePublished": "2020-11-30T00:00:00Z",
+  "dateModified": "2020-11-30T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mengsselfstorage.netlify.app/posts/alaska-nov-2020/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "我乐苦多",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mengsselfstorage.netlify.app/img/pepsi.jpg"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -73,7 +353,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="我乐苦多 (Alt + H)">我乐苦多</a>
+            <a href="https://mengsselfstorage.netlify.app/" accesskey="h" title="我乐苦多 (Alt + H)">我乐苦多</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -99,32 +379,37 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/about/" title="About">
+                <a href="https://mengsselfstorage.netlify.app/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/archives/" title="Archives">
-                    <span>Archives</span>
+                <a href="https://mengsselfstorage.netlify.app/archives/" title="Everything">
+                    <span>Everything</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
-                    <span>Tags</span>
+                <a href="https://mengsselfstorage.netlify.app/series/travel-notes/" title="趴趴走">
+                    <span>趴趴走</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/friends/" title="Friends">
+                <a href="https://mengsselfstorage.netlify.app/series/relocation/" title="碎碎念">
+                    <span>碎碎念</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mengsselfstorage.netlify.app/friends/" title="Friends">
                     <span>Friends</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://mengsselfstorage.netlify.app/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/contact/" title="Contact">
+                <a href="https://mengsselfstorage.netlify.app/contact/" title="Contact">
                     <span>Contact</span>
                 </a>
             </li>
@@ -238,21 +523,24 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/year2022/">Year2022</a></li>
-      <li><a href="http://localhost:1313/tags/alaska/">Alaska</a></li>
-      <li><a href="http://localhost:1313/tags/travel-notes/">Travel-Notes</a></li>
+      <li><a href="https://mengsselfstorage.netlify.app/tags/year2022/">Year2022</a></li>
+      <li><a href="https://mengsselfstorage.netlify.app/tags/alaska/">Alaska</a></li>
+      <li><a href="https://mengsselfstorage.netlify.app/tags/travel-notes/">Travel-Notes</a></li>
     </ul>
-  </footer><div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="2be7d731-b015-469b-b019-287e1245bed6"
-  data-page-id="http://localhost:1313/posts/alaska-nov-2020/">
-></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  </footer><div id="tcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.7.1/dist/twikoo.min.js"></script>
+<script>
+  twikoo.init({
+    envId: "https://mysite-comment-twikoo.netlify.app/.netlify/functions/twikoo",
+    el: '#tcomment',
+    path: window.location.pathname,
+  });
+</script>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">我乐苦多</a></span> · 
+        <span>&copy; 2026 <a href="https://mengsselfstorage.netlify.app/">我乐苦多</a></span> · 
 
     <span>
         Powered by

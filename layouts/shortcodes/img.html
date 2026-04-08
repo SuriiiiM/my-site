@@ -1,0 +1,18 @@
+{{- $src := (.Get "src") | default (.Get "url") -}}
+{{- $caption := (.Get "caption") | default "" -}}
+{{- $alt := (.Get "alt") | default $caption -}}
+{{- $align := .Get "align" -}}
+
+{{- if $src -}}
+<figure{{ if eq $align "center" }} class="align-center"{{ end }}>
+  <img
+    loading="lazy"
+    src="{{ $src }}"
+    alt="{{ $alt }}"
+  />
+  {{- if $caption -}}
+  <figcaption>{{- $caption | markdownify -}}</figcaption>
+  {{- end -}}
+</figure>
+{{- end -}}
+

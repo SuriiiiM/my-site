@@ -4,11 +4,23 @@ title = "友邻"
 comment = false
 +++
 
-+ [Desirée De Leon :giraffe:](http://desiree.rbind.io/) (designed 5 of the custom color themes, made illustrations for the workshop, and provided general aesthetic feedback along the way)
+[非池中物](https://chicheng.run//)
 
-+ [Garrick Aden-Buie :mage:](https://www.garrickadenbuie.com/) (debugged headroom.js and lent his panelset.js code to the theme)
+[邓布利多的冥想盆](https://pensieve.wangxindi.org)
 
-+ [Allison Horst :dog2:](https://www.allisonhorst.com/) (awesome illustrations of campfires, seedlings, and evergreens, as well as my R Markdown hedgehog mascot :hedgehog:)
+[猫和柴的野游](https://meowshiba.com/)
+
+[两人森林|猫猫文学](https://blog.citrons.cc/)
+
+[李一桃🍑](https://yitaoli2023.github.io/yitaoli/)
+
+[旋转木马鏖战记](https://samsmerrygoround.github.io/)
+
+[Baer](https://writee.org/baer/)
+
+[octo8](https://octo8.blog/)
+
+
 
 
 

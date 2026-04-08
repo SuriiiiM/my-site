@@ -24,6 +24,9 @@ EnableComments = true
 CusdisAppID = "2be7d731-b015-469b-b019-287e1245bed6"
 CusdisHost = "https://cusdis.com"
 
+# Twikoo (Netlify) comment system
+# e.g. https://xxx.netlify.app/.netlify/functions/twikoo
+twikoo = { envId = "https://mysite-comment-twikoo.netlify.app/.netlify/functions/twikoo" }
 hasCJKLanguage = true
 enableInlineShortcodes = true
 enableEmoji = true
@@ -92,15 +95,21 @@ weight = 200
 
 [[menu.main]]
 identifier = "archive"
-name = "Archives"
+name = "Everything"
 url = "/archives/"
 weight = 300
 
 [[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
-weight = 400
+identifier = "series-travel-notes"
+name = "趴趴走"
+url = "/series/travel-notes/"
+weight = 425
+
+[[menu.main]]
+identifier = "series-relocation"
+name = "碎碎念"
+url = "/series/relocation/"
+weight = 430
 
 [[menu.main]]
 identifier = "friends"

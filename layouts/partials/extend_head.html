@@ -1,0 +1,216 @@
+{{- /* Custom head content for archives heatmap. */ -}}
+
+<style>
+  .archives-heatmap-wrapper {
+    margin: 18px 0 28px;
+  }
+
+  .archives-heatmap-axis {
+    position: relative;
+    height: 18px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: var(--secondary);
+  }
+
+  .archives-heatmap-axis .hm-month {
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    transform: translateX(-1px);
+  }
+
+  .archives-heatmap {
+    --hm-size: 12px;
+    --hm-gap: 2px;
+    display: block;
+    margin: 0;
+    user-select: none;
+  }
+
+  .archives-heatmap .hm-square {
+    border-radius: 2px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid rgba(155, 156, 157, 0.25);
+  }
+
+  .archives-heatmap .hm-level-1 {
+    background: #B4C6D5;
+    border-color: #B4C6D5;
+  }
+
+  .archives-heatmap .hm-level-2 {
+    background: #8FA7BD;
+    border-color: #8FA7BD;
+  }
+
+  .archives-heatmap .hm-level-3 {
+    background: #68829C;
+    border-color: #68829C;
+  }
+
+  .archives-heatmap .hm-square a,
+  .archives-heatmap .hm-square.hm-square {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .archives-heatmap .hm-square:hover {
+    filter: brightness(1.08);
+  }
+
+  .archives-heatmap .hm-square:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  .archive-day {
+    scroll-margin-top: 90px;
+  }
+</style>
+
+<script>
+  (function () {
+    const initArchivesHeatmap = () => {
+      const heatmapEl = document.getElementById('archives-heatmap');
+      if (!heatmapEl) return;
+
+      const dataEl = document.getElementById('archives-heatmap-data');
+      if (!dataEl) return;
+
+      let data = [];
+      try {
+        data = JSON.parse(dataEl.textContent || '[]');
+        // When Hugo outputs JSON inside <script type="application/json">, it can
+        // sometimes become a JSON string (e.g. "\"[]\""). Support both shapes.
+        if (typeof data === 'string') data = JSON.parse(data);
+      } catch (e) {
+        data = [];
+      }
+
+      if (!Array.isArray(data)) data = [];
+
+      const counts = Object.create(null);
+      const titles = Object.create(null);
+      for (const item of data) {
+        if (!item || !item.d) continue;
+        counts[item.d] = Number(item.c || 0);
+        if (Array.isArray(item.t)) titles[item.d] = item.t;
+      }
+
+      const startKey = heatmapEl.dataset.start;
+      const endKey = heatmapEl.dataset.end;
+      const size = Number(heatmapEl.dataset.size || 12);
+      const gap = Number(heatmapEl.dataset.gap || 2);
+
+      const parseUTC = (key) => {
+        const [y, m, d] = key.split('-').map(Number);
+        return new Date(Date.UTC(y, m - 1, d));
+      };
+
+      const formatUTC = (dt) => {
+        const y = dt.getUTCFullYear();
+        const m = String(dt.getUTCMonth() + 1).padStart(2, '0');
+        const d = String(dt.getUTCDate()).padStart(2, '0');
+        return `${y}-${m}-${d}`;
+      };
+
+      const start = parseUTC(startKey);
+      const end = parseUTC(endKey);
+
+      const msDay = 24 * 60 * 60 * 1000;
+      const totalDays = Math.floor((end - start) / msDay) + 1;
+
+      const gridStart = new Date(start.getTime());
+      const dow = gridStart.getUTCDay(); // 0 (Sun) .. 6 (Sat)
+      gridStart.setUTCDate(gridStart.getUTCDate() - dow);
+
+      const totalWeeks = Math.ceil((totalDays + dow) / 7);
+      const step = size + gap;
+
+      // Month axis (labels above the grid).
+      const axisId = 'archives-heatmap-axis';
+      let axisEl = document.getElementById(axisId);
+      if (!axisEl) {
+        axisEl = document.createElement('div');
+        axisEl.id = axisId;
+        axisEl.className = 'archives-heatmap-axis';
+        heatmapEl.parentNode.insertBefore(axisEl, heatmapEl);
+      } else {
+        axisEl.innerHTML = '';
+      }
+
+      axisEl.style.width = `${totalWeeks * step - gap}px`;
+
+      heatmapEl.innerHTML = '';
+      heatmapEl.style.position = 'relative';
+      heatmapEl.style.width = `${totalWeeks * step - gap}px`;
+      heatmapEl.style.height = `${7 * step - gap}px`;
+
+      const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      let lastMonth = null;
+      for (let w = 0; w < totalWeeks; w++) {
+        const dt = new Date(gridStart.getTime() + w * 7 * msDay);
+        const month = dt.getUTCMonth();
+        if (month !== lastMonth) {
+          lastMonth = month;
+          const label = document.createElement('div');
+          label.className = 'hm-month';
+          label.textContent = monthNames[month];
+          label.style.left = `${w * step}px`;
+          axisEl.appendChild(label);
+        }
+      }
+
+      for (let i = 0; i < totalDays; i++) {
+        const date = new Date(start.getTime() + i * msDay);
+        const key = formatUTC(date);
+        const c = counts[key] ?? 0;
+
+        const week = Math.floor((date.getTime() - gridStart.getTime()) / (msDay * 7));
+        const row = date.getUTCDay();
+        const left = week * step;
+        const top = row * step;
+
+        const level =
+          c === 0 ? 0 : c === 1 ? 1 : c <= 3 ? 2 : 3;
+
+        if (c > 0) {
+          const a = document.createElement('a');
+          a.href = `#${key}`;
+          a.className = `hm-square hm-level-${level}`;
+          const dayTitles = titles[key] || [];
+          const titleLines = dayTitles.length
+            ? [`${key}: ${c} post${c === 1 ? '' : 's'}`, ...dayTitles]
+            : [`${key}: ${c} post${c === 1 ? '' : 's'}`];
+          a.title = titleLines.join('\n');
+          a.setAttribute('aria-label', titleLines[0]);
+          a.style.position = 'absolute';
+          a.style.left = `${left}px`;
+          a.style.top = `${top}px`;
+          a.style.width = `${size}px`;
+          a.style.height = `${size}px`;
+          heatmapEl.appendChild(a);
+        } else {
+          const s = document.createElement('span');
+          s.className = `hm-square hm-level-0`;
+          s.setAttribute('aria-hidden', 'true');
+          s.style.position = 'absolute';
+          s.style.left = `${left}px`;
+          s.style.top = `${top}px`;
+          s.style.width = `${size}px`;
+          s.style.height = `${size}px`;
+          heatmapEl.appendChild(s);
+        }
+      }
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initArchivesHeatmap, { once: true });
+    } else {
+      initArchivesHeatmap();
+    }
+  })();
+</script>
+
