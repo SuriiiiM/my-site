@@ -12,7 +12,8 @@
 {{- $sortedPages := sort $pages "Date" "desc" -}}
 {{- $latest := index $sortedPages 0 -}}
 {{- $end := cond (ne $latest nil) $latest.Date now -}}
-{{- $start := $end.AddDate 0 0 -364 -}}
+{{- /* 52 weeks x 7 days = 364 squares */ -}}
+{{- $start := $end.AddDate 0 0 -363 -}}
 {{- $startKey := $start.Format "2006-01-02" -}}
 {{- $endKey := $end.Format "2006-01-02" -}}
 
