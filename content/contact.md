@@ -2,6 +2,7 @@
 title = "Don't be a stranger"
 # description = "Don't be a stranger"
 comment = false
+hideMeta = true
 +++
 
 <form class="black-80 sans-serif" accept-charset="UTF-8" action="https://formspree.io/f/xpzbdbwl" method="POST">

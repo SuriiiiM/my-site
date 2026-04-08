@@ -2,6 +2,7 @@
 title = "Welcome. Sit down and relax."
 # description = "Welcome. Sit down and relax."
 comment = false
+hideMeta = true
 +++
 
 Hi, 我是Suri。欢迎来到我的博客。

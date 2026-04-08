@@ -2,6 +2,7 @@
 title = "友邻"
 # description = "Welcome. Sit down and relax."
 comment = false
+hideMeta = true
 +++
 
 [非池中物](https://chicheng.run//)
