@@ -185,6 +185,16 @@
           a.style.top = `${top}px`;
           a.style.width = `${size}px`;
           a.style.height = `${size}px`;
+          if (level === 1) {
+            a.style.backgroundColor = '#B4C6D5';
+            a.style.borderColor = '#B4C6D5';
+          } else if (level === 2) {
+            a.style.backgroundColor = '#8FA7BD';
+            a.style.borderColor = '#8FA7BD';
+          } else {
+            a.style.backgroundColor = '#68829C';
+            a.style.borderColor = '#68829C';
+          }
           heatmapEl.appendChild(a);
         } else {
           const s = document.createElement('span');

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Year2023 on 我乐苦多</title>
-    <link>https://mengsselfstorage.netlify.app/tags/year2023/</link>
+    <link>http://localhost:1313/tags/year2023/</link>
     <description>Recent content in Year2023 on 我乐苦多</description>
     <generator>Hugo -- 0.142.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 03 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mengsselfstorage.netlify.app/tags/year2023/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/year2023/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>H1B7抽不中: 美国-&gt;加拿大Relocation</title>
-      <link>https://mengsselfstorage.netlify.app/posts/canada-relocation/</link>
+      <link>http://localhost:1313/posts/canada-relocation/</link>
       <pubDate>Sun, 03 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://mengsselfstorage.netlify.app/posts/canada-relocation/</guid>
+      <guid>http://localhost:1313/posts/canada-relocation/</guid>
       <description>再也不想搬家啦！</description>
       <content:encoded><![CDATA[<p>首发于她乡Women Overseas</p>
 <p>在两人7抽后仍未中签的情况下，迎来了过去五年的第五次长距离搬家… 坐标是从湾区到加拿大Greater Toronto Area，本文会cover以下主要内容：</p>
