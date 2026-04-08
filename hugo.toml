@@ -5,7 +5,7 @@ title = "我乐苦多"
 
 [params]
 copyright = "© 2025 Suri"
-paginate = 5 # Shows 5 posts per page
+paginate = 10 # Shows 10 posts per page
 
 languageCode = "zh-cn"  # Primary language: Simplified Chinese
 defaultContentLanguage = "zh-cn"

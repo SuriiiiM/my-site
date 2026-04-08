@@ -190,17 +190,15 @@
         return `${y}-${m}-${d}`;
       };
 
-      const start = parseUTC(startKey);
-      const end = parseUTC(endKey);
-
       const msDay = 24 * 60 * 60 * 1000;
-      const totalDays = Math.floor((end - start) / msDay) + 1;
+      const start = parseUTC(startKey);
+      const totalWeeks = 52;
+      const totalDays = totalWeeks * 7;
 
+      
       const gridStart = new Date(start.getTime());
       const dow = gridStart.getUTCDay(); 
       gridStart.setUTCDate(gridStart.getUTCDate() - dow);
-
-      const totalWeeks = Math.ceil((totalDays + dow) / 7);
       const step = size + gap;
 
       
@@ -238,12 +236,12 @@
       }
 
       for (let i = 0; i < totalDays; i++) {
-        const date = new Date(start.getTime() + i * msDay);
+        const date = new Date(gridStart.getTime() + i * msDay);
         const key = formatUTC(date);
         const c = counts[key] ?? 0;
 
-        const week = Math.floor((date.getTime() - gridStart.getTime()) / (msDay * 7));
-        const row = date.getUTCDay();
+        const week = Math.floor(i / 7);
+        const row = i % 7;
         const left = week * step;
         const top = row * step;
 
