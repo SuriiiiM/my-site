@@ -68,6 +68,73 @@
   .archive-day {
     scroll-margin-top: 90px;
   }
+
+  /* Hide TOC on narrow/mobile screens. */
+  .post-single .toc {
+    display: none;
+  }
+
+  /* Desktop TOC: right sidebar, plain style (no card background). */
+  @media (min-width: 1400px) {
+    .post-single .toc {
+      display: block;
+      position: fixed;
+      top: 220px;
+      right: max(20px, calc((100vw - var(--main-width)) / 2 - 300px));
+      width: 260px;
+      max-height: calc(100vh - 250px);
+      overflow: auto;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+      z-index: 2;
+    }
+
+    .post-single .toc details {
+      padding: 0;
+      border: 0;
+      background: transparent;
+    }
+
+    .post-single .toc details summary {
+      display: none;
+    }
+
+    .post-single .toc details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .post-single .toc .inner {
+      margin: 0;
+      padding: 0;
+      opacity: 1;
+    }
+
+    .post-single .toc ul,
+    .post-single .toc li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .post-single .toc li + li {
+      margin-top: 12px;
+    }
+
+    .post-single .toc a {
+      display: block;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent !important;
+      color: var(--primary);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      text-decoration: none;
+    }
+  }
 </style>
 
 <script>
