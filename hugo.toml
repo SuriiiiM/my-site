@@ -100,20 +100,20 @@ url = "/archives/"
 weight = 300
 
 [[menu.main]]
-identifier = "series-travel-notes"
+identifier = "series-travel"
 name = "趴趴走"
-url = "/series/travel-notes/"
+url = "/series/travel/"
 weight = 425
 
 [[menu.main]]
-identifier = "series-relocation"
+identifier = "series-life"
 name = "碎碎念"
-url = "/series/relocation/"
+url = "/series/life/"
 weight = 430
 
 [[menu.main]]
 identifier = "friends"
-name = "Friends"
+name = "友邻"
 url = "/friends/"
 weight = 500
 

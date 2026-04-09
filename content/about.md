@@ -1,5 +1,5 @@
 +++
-title = "Welcome. Sit down and relax."
+title = "About"
 # description = "Welcome. Sit down and relax."
 comment = false
 hideMeta = true

@@ -6,7 +6,7 @@ description = "再也不想搬家啦！"
 tags = [
     "Year2023", "Canada"
 ]
-series = ["relocation"]
+series = ["life"]
 comments = true
 +++
 首发于她乡Women Overseas
