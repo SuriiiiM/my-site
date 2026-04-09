@@ -2,64 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mengsselfstorage.netlify.app/tags/canada/</loc>
+    <loc>http://localhost:1313/tags/canada/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/posts/canada-relocation/</loc>
+    <loc>http://localhost:1313/posts/canada-relocation/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/series/relocation/</loc>
+    <loc>http://localhost:1313/series/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/series/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/tags/</loc>
+    <loc>http://localhost:1313/tags/year2023/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/tags/year2023/</loc>
+    <loc>http://localhost:1313/series/life/</loc>
     <lastmod>2023-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/tags/hawaii/</loc>
+    <loc>http://localhost:1313/tags/hawaii/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/tags/travel-notes/</loc>
+    <loc>http://localhost:1313/tags/travel-notes/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/series/travel-notes/</loc>
+    <loc>http://localhost:1313/tags/year2021/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/tags/year2021/</loc>
+    <loc>http://localhost:1313/posts/hawaii-oct-2021/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/posts/hawaii-oct-2021/</loc>
+    <loc>http://localhost:1313/series/travel/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/tags/alaska/</loc>
+    <loc>http://localhost:1313/tags/alaska/</loc>
     <lastmod>2020-11-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/tags/year2022/</loc>
+    <loc>http://localhost:1313/tags/year2022/</loc>
     <lastmod>2020-11-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/posts/alaska-nov-2020/</loc>
+    <loc>http://localhost:1313/posts/alaska-nov-2020/</loc>
     <lastmod>2020-11-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/archives/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/search/</loc>
+    <loc>http://localhost:1313/archives/</loc>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/about/</loc>
+    <loc>http://localhost:1313/search/</loc>
   </url><url>
-    <loc>https://mengsselfstorage.netlify.app/friends/</loc>
+    <loc>http://localhost:1313/friends/</loc>
   </url>
 </urlset>
